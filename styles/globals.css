@@ -1,0 +1,7 @@
+/* styles/globals.css */
+@import "tailwindcss";
+
+/* optional defaults */
+html, body, #__next { height: 100%; }
+body { @apply bg-white text-gray-900 antialiased; }
+
