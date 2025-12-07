@@ -1,5 +1,6 @@
 // pages/api/summarize.js
 const OPENAI_KEY = process.env.OPENAI_API_KEY || "";
+console.log("API KEY LOADED:", !!OPENAI_KEY);
 
 function localSummarize(text, maxSentences = 5) {
     const sents = text.replace(/\n+/g, " ").match(/[^.!?]+[.!?]?/g) || [text];
